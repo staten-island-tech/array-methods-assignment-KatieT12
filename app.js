@@ -1,58 +1,45 @@
 
-const date = new Date();
-let year = date.getFullYear(); 
 const thing1 = {
-    firstName: "Thing",
-    lastName: "1",
+    firstName: "Thing1",
+    lastName: "Seuss",
     graduated: false, 
     intelligent: false,
     something: true,
-    DOB: 2007,
     Spouse: null,
-    siblings: ["one", "two"],
-    age: function(){
-        return year - this.DOB;
-    },
+    Likes: ["thing2", "pizza"],
 };
  const thing2 = {
-    firstName: "Thing",
-    lastName: "2",
+    firstName: "Thing2",
+    lastName: "Seuss",
     graduated: false, 
     intelligent: false,
     something: true,
-    DOB: 2007,
     Spouse: null,
-    siblings: ["one", "two"],
-    age: function(){
-        return year - this.DOB;
-    },
+    siblings: ["icecream", "cheese"],
 };  
 const thing3 = {
-    firstName: "Thing",
-    lastName: "3",
+    firstName: "Thing3",
+    lastName: "Seuss",
     graduated: false, 
     intelligent: false,
     something: true,
-    DOB: 2007,
     Spouse: null,
-    siblings: ["one", "two"],
-    age: function(){
-        return year - this.DOB;
-    },
+    siblings: ["chocolate", "jellybeans"],
 };
  const thing4 = {
-    firstName: "Thing",
-    lastName: "4",
+    firstName: "Thing4",
+    lastName: "Seuss",
     graduated: false, 
     intelligent: false,
     something: true,
-    DOB: 2007,
     Spouse: null,
-    siblings: ["one", "two"],
-    age: function(){
-        return year - this.DOB;
-    },
+    siblings: ["football", "dancing"],
 };  
 
-const array1 = [thing1, thing2, thing3, thing4];
+const array1 = [thing1.firstName, thing2.firstName, thing3.firstName, thing4.firstName];
+array1.forEach((name)=> console.log(name.firstName));
+console.log(array1);
+
+const array2 = [thing1, thing2, thing3, thing4];
 array1.forEach((element)=> console.log(element.firstName));
+console.log(array2);
