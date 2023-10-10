@@ -54,5 +54,5 @@ const thing3 = {
     },
 };  
 
-const words = [thing1, thing2, thing3, thing4, thing5];
-students.forEach((student)=> console.log(student.firstName));
+const array1 = [thing1, thing2, thing3, thing4];
+array1.forEach((element)=> console.log(element.firstName));
