@@ -36,7 +36,7 @@ const thing3 = {
     Likes: ["football", "dancing"],
 };  
 
-/* const array1 = [thing1, thing2, thing3, thing4];
+const array1 = [thing1, thing2, thing3, thing4];
 array1.forEach((name)=> console.log(name.firstName));
 const array2 = [thing1, thing2, thing3, thing4];
 array2.forEach((element)=> console.log(element.lastName));
@@ -49,16 +49,16 @@ array5.forEach((element)=> console.log(element.something));
 const array6 = [thing1, thing2, thing3, thing4];
 array6.forEach((element)=> console.log(element.Spouse));
 const array7 = [thing1, thing2, thing3, thing4];
-array7.forEach((element)=> console.log(element.Likes)); */
+array7.forEach((element)=> console.log(element.Likes));
 
-var firstname = "My name is"
-const array1 = [thing1.firstName, thing2.firstName, thing3.firstName, thing4.firstName];
-array1.forEach((name) => {
-    console.log();
-});
+/* const array10 = [thing1.firstName, thing2.firstName, thing3.firstName, thing4.firstName];
+let firstVar = firstName
+array10.forEach((name) => {
+    console.log('My name is ${array1}');
+});  */
 
 //filter array//
-/* const array8 = [thing1, thing2, thing3, thing4];
+const array8 = [thing1.firstName, thing2.firstName, thing3.firstName, thing4.firstName];
 const graduated = array8.filter((array8)=> array8.something !== true);
 console.log(graduated);
- */
+
