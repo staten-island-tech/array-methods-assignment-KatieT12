@@ -41,5 +41,5 @@ array1.forEach((name)=> console.log(name.firstName));
 console.log(array1);
 
 const array2 = [thing1, thing2, thing3, thing4];
-array1.forEach((element)=> console.log(element.firstName));
+array2.forEach((element)=> console.log(element.firstName));
 console.log(array2);
