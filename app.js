@@ -1,7 +1,7 @@
 
 const thing1 = {
     firstName: "Thing1",
-    lastName: "Seuss",
+    lastName: "Seus",
     graduated: false, 
     intelligent: false,
     something: true,
@@ -10,36 +10,55 @@ const thing1 = {
 };
  const thing2 = {
     firstName: "Thing2",
-    lastName: "Seuss",
+    lastName: "Sooss",
     graduated: false, 
-    intelligent: false,
-    something: true,
+    intelligent: true,
+    something: false,
     Spouse: null,
-    siblings: ["icecream", "cheese"],
+    Likes: ["icecream", "cheese"],
 };  
 const thing3 = {
     firstName: "Thing3",
     lastName: "Seuss",
     graduated: false, 
-    intelligent: false,
+    intelligent: true,
     something: true,
     Spouse: null,
-    siblings: ["chocolate", "jellybeans"],
+    Likes: ["chocolate", "jellybeans"],
 };
  const thing4 = {
     firstName: "Thing4",
-    lastName: "Seuss",
+    lastName: "Seuz",
     graduated: false, 
     intelligent: false,
     something: true,
     Spouse: null,
-    siblings: ["football", "dancing"],
+    Likes: ["football", "dancing"],
 };  
 
-const array1 = [thing1.firstName, thing2.firstName, thing3.firstName, thing4.firstName];
+/* const array1 = [thing1, thing2, thing3, thing4];
 array1.forEach((name)=> console.log(name.firstName));
-console.log(array1);
-
 const array2 = [thing1, thing2, thing3, thing4];
-array2.forEach((element)=> console.log(element.firstName));
-console.log(array2);
+array2.forEach((element)=> console.log(element.lastName));
+const array3 = [thing1, thing2, thing3, thing4];
+array3.forEach((element)=> console.log(element.graduated));
+const array4 = [thing1, thing2, thing3, thing4];
+array4.forEach((element)=> console.log(element.intelligent));
+const array5 = [thing1, thing2, thing3, thing4];
+array5.forEach((element)=> console.log(element.something));
+const array6 = [thing1, thing2, thing3, thing4];
+array6.forEach((element)=> console.log(element.Spouse));
+const array7 = [thing1, thing2, thing3, thing4];
+array7.forEach((element)=> console.log(element.Likes)); */
+
+var firstname = "My name is"
+const array1 = [thing1.firstName, thing2.firstName, thing3.firstName, thing4.firstName];
+array1.forEach((name) => {
+    console.log();
+});
+
+//filter array//
+/* const array8 = [thing1, thing2, thing3, thing4];
+const graduated = array8.filter((array8)=> array8.something !== true);
+console.log(graduated);
+ */
