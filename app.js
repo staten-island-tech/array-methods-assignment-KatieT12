@@ -3,50 +3,53 @@ const thing1 = {
     firstName: "Thing1",
     lastName: "Seus",
     graduated: true, 
-    intelligent: true,
-    Spouse: null,
-    Likes: ["thing2", "pizza"],
+    favoritecolor: "Red",
+    Age: "16",
+    Likes: ["bread", "pizza"],
 };
  const thing2 = {
     firstName: "Thing2",
     lastName: "Sooss",
     graduated: false, 
-    intelligent: false,
-    Spouse: null,
+    favoritecolor: "Blue",
+    Age: "20",
     Likes: ["icecream", "cheese"],
 };  
 const thing3 = {
     firstName: "Thing3",
     lastName: "Seuss",
     graduated: true, 
-    intelligent: true,
-    Spouse: null,
+    favoritecolor: "Green",
+    Age: "17",
     Likes: ["chocolate", "jellybeans"],
 };
  const thing4 = {
     firstName: "Thing4",
     lastName: "Seuz",
     graduated: false, 
-    intelligent: false,
-    Spouse: null,
+    favoritecolor: "Purple",
+    Age: "5",
     Likes: ["football", "dancing"],
 };  
 
 const array1 = [thing1, thing2, thing3, thing4];
 array1.forEach((name)=> console.log(name.firstName));
 const array2 = [thing1, thing2, thing3, thing4];
-array2.forEach((element)=> console.log(element.lastName));
+array2.forEach((lastname)=> console.log(lastname.lastName));
 const array3 = [thing1, thing2, thing3, thing4];
-array3.forEach((element)=> console.log(element.graduated));
+array3.forEach((graduated)=> console.log(graduated.graduated));
+
 const array4 = [thing1, thing2, thing3, thing4];
-array4.forEach((element)=> console.log(element.intelligent));
+array4.forEach((color)=> console.log(color.favoritecolor));
+
 const array5 = [thing1, thing2, thing3, thing4];
-array5.forEach((element)=> console.log(element.Spouse));
+array5.forEach((age)=> console.log(age.Age));
+
 const array6 = [thing1, thing2, thing3, thing4];
-array6.forEach((element)=> console.log(element.Likes)); 
+array6.forEach((list)=> console.log(list.Likes));
 
 
 //filter array//
-const array7 = [thing1, thing2, thing3, thing4];
-const graduated = array7.filter((array7)=> array7.graduated !== true);
+const array8 = [thing1, thing2, thing3, thing4];
+const graduated = array8.filter((array8)=> array8.graduated !== true);
 console.log(graduated);
