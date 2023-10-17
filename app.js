@@ -45,10 +45,10 @@ array4.forEach((color)=> console.log(color.favoritecolor));
 const array5 = [thing1, thing2, thing3, thing4];
 array5.forEach((age)=> console.log(age.Age));
 
-/* const array6 = [thing1, thing2, thing3, thing4];
-array6.forEach((array6) => array6.forEach((like)=> console.log(like.Likes))); */
-const array6 = [thing1, thing2, thing3, thing4];
-array6.forEach((like)=> console.log(like.Likes));
+ /* const array6 = [thing1, thing2, thing3, thing4];
+array6.forEach((array6) => array6.forEach((like)=> console.log(like.Likes)));  */
+array6 = [thing1, thing2, thing3, thing4];
+array6.forEach((like)=> console.log(like.Likes)); 
 
 
 //filter array//
