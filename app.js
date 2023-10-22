@@ -1,69 +1,44 @@
-const things = [
+const pokemon = [
 {
-    firstName: "Thing1",
-    lastName: "Seus",
-    graduated: true, 
-    favoritecolor: "Red",
-    Age: "16",
-    Likes: ["bread", "pizza"],
+    Name: "Pikachu",
+    mainColor: "Yellow",
+    Generation: "Gen I",
+    Types: ["fire", "steel"],
 },
 {
-    firstName: "Thing2",
-    lastName: "Sooss",
-    graduated: false, 
-    favoritecolor: "Blue",
-    Age: "20",
-    Likes: ["icecream", "cheese"],
+    Name: "Swampert",
+    mainColor: "Blue",
+    Generation: "Gen III",
+    Types: ["water", "ground"],
 }, 
 {
-    firstName: "Thing3",
-    lastName: "Seuss",
-    graduated: true, 
-    favoritecolor: "Green",
-    Age: "17",
-    Likes: ["chocolate", "jellybeans"],
+    Name: "Heatran",
+    mainColor: "Red",
+    Generation: "Gen IV",
+    Types: ["fire", "steel"],
 },
 {
-    firstName: "Thing4",
-    lastName: "Seuz",
-    graduated: false, 
-    favoritecolor: "Purple",
-    Age: "5",
-    Likes: ["football", "dancing"],
+    Name: "Nihilego",
+    mainColor: "Blue",
+    Generation: "Gen VII",
+    Types: ["rock", "poison"],
 },
 ]
 
-things.forEach(element => {
-    console.log(element.firstName);
-    console.log(element.lastName);
-    console.log(element.graduated);
-    console.log(element.favoritecolor);
-    console.log(element.Age);
-    console.log(element.Likes);
+pokemon.forEach(element => {
+    console.log(element.Name);
+    console.log(element.mainColor);
+    console.log(element.Generation);
+    console.log(element.Types);
 });
-things.forEach((element) => element.Likes.forEach((element) => console.log(element.Likes)));
 
-const graduated = things.filter((things)=> things.graduated !== true);
-console.log(graduated);
+pokemon.forEach((element) => {
+    element.Types.forEach(function(element) {
+        console.log(element.Types);
+    });
+});
 
-/* things.forEach((element)=>element.Likes.forEach((element) => console.log(Likes)));
- */
-/* array1.forEach((thing)=>thing.Likes.forEach((thing) => console.log(Likes)));
 
-/* const array1 = [thing1, thing2, thing3, thing4];
-array1.forEach((name)=> console.log(name.firstName));
-const array2 = [thing1, thing2, thing3, thing4];
-array2.forEach((lastname)=> console.log(lastname.lastName));
-const array3 = [thing1, thing2, thing3, thing4];
-array3.forEach((graduated)=> console.log(graduated.graduated));
-
-const array4 = [thing1, thing2, thing3, thing4];
-array4.forEach((color)=> console.log(color.favoritecolor));
-
-const array5 = [thing1, thing2, thing3, thing4];
-array5.forEach((age)=> console.log(age.Age));
-
-const array6 = [thing1, thing2, thing3, thing4];
-const list = [thing1, thing2, thing3, thing4];
-array6.forEach((list) => list.forEach((like)=> console.log(like.Likes)));  
-*/
+pokemon
+.filter((things) => things.mainColor.includes('Blue'))
+.forEach((things) => console.log(things.Name));
